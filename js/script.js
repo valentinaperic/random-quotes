@@ -19,7 +19,6 @@ window.onload = function(){
 ***/
 
 //properties list: quote, source, citation, and year
-
 let quotes = [
   {
     quote: "Well, I’ve made up my mind, anyway. I want to see mountains again, Gandalf – mountains; and then find somewhere where I can rest.",
@@ -66,6 +65,7 @@ function getRandomQuote() {
 ***/
 
 function getRandomColor() {
+
   let colors = ["blue", "red", "purple", "rgb(58, 193, 98)", "black"];
 
   return colors[Math.floor(Math.random() * colors.length)];
@@ -77,7 +77,6 @@ function getRandomColor() {
 ***/
 
 function printQuote() {
-
 
   let quote = getRandomQuote();
  
@@ -92,8 +91,6 @@ function printQuote() {
 
   //final quote string is attached to quote-box element
   return document.getElementById('quote-box').innerHTML = finalQuote;
-
-
 }
 
 
